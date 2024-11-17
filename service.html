@@ -7,7 +7,9 @@
 </head>
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="service.css">
 <body>
+  <div id="preloader"></div>
     <!-- Header starts -->
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -411,6 +413,12 @@
 }
   </style>
    <!-- Ends here  -->
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none"
+  })
+</script>
 
 </body>
 </html>

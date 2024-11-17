@@ -6,9 +6,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Caveat:wght@400..700&family=Ga+Maamli&family=Kalam:wght@300;400;700&family=Rubik+Marker+Hatch&family=Shalimar&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="appointment.css">
 
 </head>
 <body>
+  <div id="preloader"></div>
     <!-- header starts from here -->
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -91,6 +93,11 @@
 }
 </style>
 
-
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none"
+  })
+</script>
 </body>
 </html>
